@@ -6,7 +6,7 @@ Opto_Prop7 contains matlab routine to draw the following Gain equation against f
 
 ![](shots/Opto_Prop7_01.png)
 
-Execution of this script should produces the following
+Execution of this script should produce the following
 
 ![](shots/Opto_Prop7_02.png)
 
