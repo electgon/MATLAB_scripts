@@ -1,0 +1,19 @@
+f=1e6:1e5:500e6;
+r=0.55;
+r1=0.995;
+t=1.55;
+t1=1.995;
+t2=0.45;% t`=t2
+n=1;
+c=3e8;
+L=1;
+d=L;
+beta=(2*pi*n.*f/c);
+y1=t^2*t1*exp(-j.*beta*(L+d));
+y2=1+r*r1*exp(-2*j.*beta*L);
+y3=r^2*exp(-2*j.*beta*d);
+y4=[r^3*r1+(t*t2*r*r1)]*exp(-2*j.*beta*(L+d));
+y5=y2+y3+y4;
+y=y1./y5;
+x=abs(y);
+plot(f,x)
